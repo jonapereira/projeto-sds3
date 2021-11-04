@@ -19,7 +19,7 @@ public class SaleController {
 	private SellerService service;
 	
 	@GetMapping
-	public ResponseEntity<List<SellerDTO>> buscar(){
+	public ResponseEntity<List<SellerDTO>> findAll(){
 		List<SellerDTO> list= service.findAll();
 		return ResponseEntity.ok(list);
 	}
