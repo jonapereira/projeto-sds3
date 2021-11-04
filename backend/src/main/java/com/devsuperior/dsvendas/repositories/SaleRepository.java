@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.devsuperior.dsvendas.entities.Sale;
 
-public interface SalerRepository extends JpaRepository<Sale,Long> {
+public interface SaleRepository extends JpaRepository<Sale,Long>{
 
 }
