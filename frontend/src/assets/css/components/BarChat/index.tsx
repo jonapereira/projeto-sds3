@@ -34,7 +34,7 @@ const BarChat = () => {
             }
         ]
     });
-
+ 
     useEffect(() => {
         //forma errada para mostrar necessidade dos hucks
         //let chartData : ChartData = {labels:[], series:[]};
