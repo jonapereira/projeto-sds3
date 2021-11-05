@@ -6,9 +6,6 @@ import com.devsuperior.dsvendas.entities.Seller;
 
 public class SellerDTO implements Serializable{
 	
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private Long Id;
 	private String name;
@@ -23,7 +20,7 @@ public class SellerDTO implements Serializable{
 	}
 
 	public SellerDTO(Seller entity) {
-		Id = entity.getId();
+		this.Id = entity.getId();
 		this.name = entity.getName();
 	}
 
