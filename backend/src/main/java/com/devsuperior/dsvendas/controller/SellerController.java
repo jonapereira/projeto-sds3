@@ -36,7 +36,7 @@ public class SellerController {
 		return ResponseEntity.ok(list);
 	}
 	
-	@GetMapping ("/sucess")
+	@GetMapping ("/sales/sucess")
 	public ResponseEntity<List<SaleSucessDTO>> sucessGroupedBySeller() {
 		List<SaleSucessDTO> list= service.sucessGroupedBySeller();
 		return ResponseEntity.ok(list);
