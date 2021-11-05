@@ -30,7 +30,7 @@ public class SellerController {
 	}
 
 	
-	@GetMapping ("/amount-by-seller")
+	@GetMapping ("/sales/amount-by-seller")
 	public ResponseEntity<List<SaleSumDTO>> amountGroupedBySeller() {
 		List<SaleSumDTO> list= service.amountGroupedBySeller();
 		return ResponseEntity.ok(list);
