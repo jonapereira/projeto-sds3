@@ -16,7 +16,7 @@ const DonutChart = () => {
     useEffect(() => {
         //forma errada para mostrar necessidade dos hucks
         //let chartData : ChartData = {labels:[], series:[]};
-        axios.get(`${BASE_URL}/sales/amount-by-seller`)
+        axios.get(`${BASE_URL}/amount-by-seller`)
             .then(response => {
                 const data = response.data as SaleSum[];
                 const mylabels = data.map(x => x.sellerName);

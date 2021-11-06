@@ -38,7 +38,7 @@ const BarChat = () => {
     useEffect(() => {
         //forma errada para mostrar necessidade dos hucks
         //let chartData : ChartData = {labels:[], series:[]};
-        axios.get(`${BASE_URL}/sales/sucess`)
+        axios.get(`${BASE_URL}/sucess`)
             .then(response => {
                 const data = response.data as SaleSucess[];
                 const mylabels = data.map(x => x.sellerName);
